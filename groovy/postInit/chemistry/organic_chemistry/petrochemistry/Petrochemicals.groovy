@@ -11,6 +11,15 @@ import static gregtech.api.GTValues.*
         .EUt(VA[LV])
         .buildAndRegister()
     
+    BCR.recipeBuilder()
+        .fluidInputs(fluid('btex_extract') * 800)
+        .fluidInputs(fluid('dense_steam') * 100)
+        .fluidOutputs(fluid('furfural_solution') * 200)
+        .fluidOutputs(fluid('btex') * 800)
+        .duration(100)
+        .EUt(VA[LV])
+        .buildAndRegister()
+
     SIEVE_DT.recipeBuilder()
         .fluidInputs(fluid('btex_extract') * 800)
         .fluidInputs(fluid('dense_steam') * 100)
